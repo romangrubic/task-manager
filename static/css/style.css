@@ -1,12 +1,27 @@
-.btn_small{
+.btn_small {
     height: 24px;
     width: 60px;
     line-height: 24px;
-    margin: 5px 5px;
+    margin: 8px 5px;
     padding: 0 0.5em;
 }
 
-.task_header{
-    margin-top: 10px;
+.task_header {
+    margin: 10px auto;
+    text-align: center;
 
+}
+/* ---- Navbar -----*/
+.navbar {
+    background-color:lightskyblue;
+}
+
+.side-nav > li:hover {
+    background: rgba(0, 183, 255, 0.4);
+}
+.material-icons{
+    margin-top: 10px;
+}
+.collapsible-body{
+    margin: 5px 25px;
 }
