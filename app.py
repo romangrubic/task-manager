@@ -17,12 +17,12 @@ mongo = PyMongo(app)
 # ----------------Tasks-------------------------------------
 @app.route('/get-tasks')
 def get_tasks():
-    return render_template("tasks.html", tasks=mongo.db.tasks.find())
+    return render_template("tasks.html", tittle="Home", tasks=mongo.db.tasks.find())
 
 
 @app.route('/add_task')
 def add_task():
-    return render_template('addtask.html', categories=mongo.db.categories.find())
+    return render_template('addtask.html', tittle="Add task",  categories=mongo.db.categories.find())
 
 
 @app.route('/insert_task', methods=['POST'])
@@ -36,7 +36,7 @@ def insert_task():
 def edit_task(task_id):
     the_task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
     all_categories = mongo.db.categories.find()
-    return render_template('edittask.html', task=the_task, categories=all_categories)
+    return render_template('edittask.html', tittle="Edit task",  task=the_task, categories=all_categories)
 
 
 @app.route('/update_task/<task_id>', methods=["POST"])
@@ -64,13 +64,13 @@ def delete_task(task_id):
 
 @app.route('/get_categories')
 def get_categories():
-    return render_template('categories.html',
+    return render_template('categories.html', tittle="Categories", 
                            categories=mongo.db.categories.find())
 
 
 @app.route('/edit_category/<category_id>')
 def edit_category(category_id):
-    return render_template('editcategory.html',
+    return render_template('editcategory.html', tittle="Edit category", 
                            category=mongo.db.categories.find_one(
                                {'_id': ObjectId(category_id)}))
 
@@ -99,7 +99,7 @@ def insert_category():
 
 @app.route('/new_category')
 def new_category():
-    return render_template('addcategory.html')
+    return render_template('addcategory.html', tittle="Add category")
 
 
 if __name__ == '__main__':
