@@ -17,18 +17,18 @@
 	<header>
 		<nav>
 			<div class="nav-wrapper navbar">
-				<a href="{{url_for('get_tasks')}}" class="brand-logo center">
+				<a href="{{url_for('get_tasks')}}" class="brand-logo left">
                 <img src="{{url_for('static', filename='images/icon/logo-icon.png')}}" alt=""></a>
 				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					<li><a href="{{url_for('get_tasks')}}">Home</a></li>
-					<li><a href="{{url_for('add_task')}}">New Task</a></li>
+					<li><a href="{{url_for('add_task')}}">Add Task</a></li>
 					<li><a href="{{url_for('get_categories')}}">Manage Categories</a></li>
 				</ul>
                 
 				<ul class="side-nav" id="mobile-demo">
 					<li><a href="{{url_for('get_tasks')}}"><span>Home</span></a></li>
-					<li><a href="{{url_for('add_task')}}"><span>New Task</span></a></li>
+					<li><a href="{{url_for('add_task')}}"><span>Add Task</span></a></li>
 					<li><a href="{{url_for('get_categories')}}"><span>Manage Categories</span></a></li>
 				</ul>
 			</div>
@@ -44,11 +44,11 @@
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Roman Grubic</h5>
-                <p class="grey-text text-lighten-4">Student at Kerry College and CodeInstitute</p>
+                <h5 >Roman Grubic</h5>
+                <p class="text-lighten-4">Student at Kerry College and CodeInstitute</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Connect with me!</h5>
+                <h5 >Connect with me!</h5>
                 <ul>
                   <li class="list-inline footer-icons"><a href="https://www.linkedin.com/in/roman-grubic-b835ab67/" target="-blank">
 						<i class="fab fa-linkedin  footer-icon" aria-hidden="true"></i>
@@ -62,7 +62,7 @@
               </div>
             </div>
           </div>
-          <div class="footer-copyright">
+          <div>
             <div class="container center">
             © 2020 for Educational purposes only
             </div>
