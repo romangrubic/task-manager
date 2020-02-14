@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
 .btn_small {
     height: 24px;
     width: 60px;
@@ -13,13 +19,16 @@
 }
 /* ---- Navbar -----*/
 .navbar {
-    background-color:lightskyblue;
+    background-color:rgba(135, 206, 250);
+}
+.brand-logo{
+    margin: auto;
 }
 
 .side-nav > li:hover {
     background: rgba(0, 183, 255, 0.4);
 }
-.material-icons{
+.task-icon{
     margin-top: 10px;
 }
 .collapsible-body{

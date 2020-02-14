@@ -8,7 +8,7 @@
 	<title>Task Manager - {{ tittle }}</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/icon/icon.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/icon/tittle-icon.png')}}">
 	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
 </head>
 
@@ -16,7 +16,8 @@
 	<header>
 		<nav>
 			<div class="nav-wrapper navbar">
-				<a href="{{url_for('get_tasks')}}" class="brand-logo">Task Manager</a>
+				<a href="{{url_for('get_tasks')}}" class="brand-logo center">
+                <img src="{{url_for('static', filename='images/icon/logo-icon.png')}}" alt=""></a>
 				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					<li><a href="{{url_for('get_tasks')}}">Home</a></li>
